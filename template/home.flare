@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data</title>
+  <style type="text/css">
+    a,th,td {
+      padding: 10px;
+    } 
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h3>Data</h3>
+  <hr/>
+  <p>
+    <a href="/insert">Form tambah data</a>
+  </p>
+  <hr/>
+    {{ if . }}
+      {{ range . }}
+        <table style="padding: 10px;">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Nama</td>
+              <td>Alamat</td>
+              <td>Aksi</td>
+           </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ .Id }}</td>
+            <td> {{ .Nama }} </td>
+            <td>{{ .Alamat }} </td> 
+            <td><a href="/edit?id={{.Id}}">Edit</a> <a href="/delete?id={{.Id}}">Hapus</a></td>
+          </tr>
+        </tbody>
+      </table>
+      {{ end }}
+    {{ end }}
+</body>
+</html>

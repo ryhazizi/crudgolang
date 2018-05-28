@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Not Found</title>
+  <style type="text/css">
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>404 NOT FOUND</h1>
+    <a href="/">Go to index</a>
+  </center>
+</body>
+</html>

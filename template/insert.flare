@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tambah Data</title>
+	<style type="text/css">
+		a {
+			text-decoration: none;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+  <h3>Form Tambah Data</h3>
+  <form method="POST" action="insertProcess">
+  	<table>
+  		<tr>
+  			<td>
+  				<label>Nama</label>
+  			</td>
+  			<td>
+  				<input type="text" name="name">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td>
+  				<label>Alamat</label>
+  			</td>
+  			<td>
+  				<input type="text" name="address">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td></td>
+  			<td>
+  				<button type="submit">Tambahkan</button>
+  			</td>
+  		</tr>
+  	</table>
+  </form>
+  <br/>
+  <a href="/">kembali ke halaman awal</a>
+</body>
+</html>

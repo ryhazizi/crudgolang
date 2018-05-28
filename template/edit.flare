@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Data</title>
+	<style type="text/css">
+		a {
+			text-decoration: none;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+  <h3>Form Edit Data</h3>
+  <form method="POST" action="editProcess">
+    <input type="hidden" name="id" value="{{.Id}}" />
+  	<table>
+  		<tr>
+  			<td>
+  				<label>Nama</label>
+  			</td>
+  			<td>
+  				<input type="text" name="name" value="{{.Nama}}">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td>
+  				<label>Alamat</label>
+  			</td>
+  			<td>
+  				<input type="text" name="address" value="{{.Alamat}}">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td></td>
+  			<td>
+  				<button type="submit">Perbaharui</button>
+  			</td>
+  		</tr>
+  	</table>
+  </form>
+  <br/>
+  <a href="/">kembali ke halaman awal</a>
+</body>
+</html>
